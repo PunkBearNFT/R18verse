@@ -1,0 +1,255 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@layer base{
+    .btn-medium{
+        @apply
+        transition duration-500 ease-in-out
+        bg-blue-700
+        hover:bg-lime-400
+        hover:text-black
+        hover:-translate-y-2
+        text-white
+        font-bold
+        rounded-xl
+        px-6
+        py-3
+        leading-loose
+        text-center
+        text-sm
+        mr-3
+        md:mr-0;
+        cursor: pointer;
+        background: #A594E9;
+        line-height: 110%;
+    }
+    .btn-medium-outline{
+        @apply
+        transition duration-500 ease-in-out
+        bg-blue-700
+        hover:bg-lime-400
+        hover:text-black
+        hover:-translate-y-2
+        text-white
+        font-bold
+        rounded-xl
+        px-6
+        py-3
+        leading-loose
+        text-center
+        text-sm
+        mr-3
+        md:mr-0;
+        cursor: pointer;
+        background: #fff;
+        color: #5B4F82;
+        border-color:#C4C4C4;
+        border-style:solid;
+        line-height: 110%;
+        border-width:1px;
+    }
+    .nav-a{
+        @apply
+        border-b border-gray-100
+        md:hover:bg-transparent md:border-0
+        block
+        font-bold
+        mr-4
+        ml-4
+        py-2
+        md:hover:text-blue-700 md:p-0 ;
+        color: #A594E9;
+    }
+    h4{
+        @apply
+        text-black
+        text-2xl
+        leading-10
+        font-bold
+
+    }
+    h6{
+        @apply
+        font-semibold
+    }
+    h3{
+        @apply
+        text-3xl
+        font-medium
+        font-bold;
+        line-height:'150%'
+        
+    }
+    .line{
+        @apply
+        flex
+        my-9
+        h-px
+        w-full
+        bg-gray-300
+    }
+    .checkboxLabel{
+        @apply
+        flex
+        items-center
+        py-2
+    }
+    .checkbox{
+        @apply
+        shadow-transparent
+    }
+    .input-halfwidth{
+        @apply
+        rounded-2xl
+        focus-visible:outline-0
+        focus:outline-0 focus:border-0 focus:shadow-transparent
+        border-0
+        p-3
+        px-6
+        w-1/2
+        mr-4
+        bg-stone-100
+        placeholder-stone-300
+        text-stone-900
+        font-semibold
+        mb-5;
+    }
+    .input{
+        @apply
+        my-5
+        rounded-2xl
+        focus-visible:outline-0
+        focus:outline-0 focus:border-0 focus:shadow-transparent
+        border-0
+        p-3
+        px-6
+        w-full
+        bg-stone-100
+        placeholder-stone-300
+        text-stone-900
+        font-semibold
+    }
+    .uploadArea{
+        @apply
+        rounded-2xl
+        border-2 border-dashed border-stone-300
+        h-52
+        bg-stone-100
+        flex flex-col
+        justify-evenly
+        items-center
+        text-stone-600
+        my-5
+    }
+    .input-textArea{
+        @apply
+        mb-5
+        rounded-2xl
+        focus-visible:outline-0
+        focus:outline-0 focus:border-0 focus:shadow-transparent
+        border-0
+        p-3
+        px-6
+        w-full
+        h-32
+        bg-stone-100
+        placeholder-stone-300
+        text-stone-900
+        font-semibold
+        resize-none
+    }
+    .collectionCardInr{
+        @apply
+        px-6 py-6
+        border border-gray-300
+        hover:border-transparent
+        rounded-3xl
+        transition-all
+        duration-700
+        ;
+    }
+    .img-otr{
+    }
+    .img-tilt{
+        @apply
+        rounded-3xl
+    }
+
+    
+    .view-container{
+        @apply
+        2xl:max-w-6xl
+        xl:max-w-6xl
+        lg:max-w-4xl
+        md:max-w-2xl
+        max-w-sm
+    }
+
+    .color-main{
+        color:#5B4F82;
+    }
+
+    .card-logo{
+        @apply
+        flex flex-col items-center bg-white rounded-xl
+        px-2 py-2
+
+    }
+    .card-exp{
+        @apply
+        w-60
+        h-72
+        bg-white
+        flex
+        flex-col
+        mb-6
+        ;
+        box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .card-best{
+        @apply
+        w-64
+        bg-white
+        flex
+        flex-col
+        mx-4
+        ;
+        border-radius:0.625rem;
+        overflow: hidden;
+        height: 31.5625rem;
+    }
+    .card-first-slide{
+        @apply
+        pb-14;
+    }
+    .card-first{
+        @apply
+        bg-white
+        flex
+        flex-col
+        ;
+        height: 32.875rem;
+        width:21.5rem;
+        border-radius:0.625rem;
+        overflow: hidden;
+        
+    }
+
+    .card-first-container{
+        height: 22.625rem;
+        width:21.5rem;
+        border-radius: 0.625rem 0.625rem 0px 0px;
+
+    }
+}
+.collectionCardInr:hover{
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1) !important;
+}
+
+
